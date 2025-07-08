@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <!--
+    form ==> for collecting the user information
+    input is "Inline-block level element"
+    button is "Inline-block level element"
+    for attribue and id attribute should be same to connect ** label and input tags **
+    ------------------------------------------
+    tags:
+    ------------------------------------------
+    ==> <form action=""></form>
+    ==> <label for=""></label>
+    ==> <input type="text">
+    ==> <textarea name="" id=""></textarea> = ros, cols7
+    ==> <select name="" id="">
+        ==> <option value=""></option>
+    </select>
+    ==> <button></button>
+    ==> <fieldset></fieldset> 
+    ==> <legend></legend>
+    
+    
+    ATTRIBUE            TYPES
+----------------------------------------
+    type                [input tag] text, tel(number), password, number, placeholder, value(if u want to provide value), readonly(u can only give cant change), checkbox, radio, date, range, submit
+                        [button tag] submit, reset
+    id                  [input tag] for attribue and id attribute should be same to connect ** label and input tags **
+    name                [input tag] storing the value used with js
+    for                 [label tag] or attribue and id attribute should be same to connect ** label and input tags **
+-->
+   <legend></legend>
+   
+    <form action="" method="" autocomplete="off">
+        <fieldset><!-- gives border-->
+            <legend>Student Info</legend><!--write content in border-->
+
+        <label for="sname">Student Name : </label>
+        <input type="text" id="sname" name="ssname" placeholder="Enter your name" value="">
+        <br><br>
+
+        <label for="ph">Phone Number : </label>
+        <input type="tel" id="ph" name="sph" placeholder="Enter your pno"> <!-- tel==>numbers-->
+        <br><br>
+
+        <label for="pws">Password : </label>
+        <input type="password" id="pws" placeholder="Enter your password" minlength="4" maxlength="6">
+        <br><br>
+
+        <label for="age">Student Age : </label>
+        <input type="number" name="sage" id="age" placeholder="Enter your age">
+        <br><br>
+        
+        <label for="admin">admin email</label>
+        <input type="email" name="adminEmail" id="admin" value="admin@gmail.com" readonly> <!--cant change only read-->
+        <br><br>
+
+        <label for="mail">Email : </label>
+        <input type="email" name="smail" id="mail" placeholder="Enter your email">
+        <br><br>
+
+        <label for="">Subjects : </label>
+        <br>
+
+        <!--Whenever user is not typing any input developer has to give value (checkbox)-->
+        <input type="checkbox" id="s1" name="sub1" value="HTML">
+        <label for="s1">HTML</label>
+        <br>
+        
+        <input type="checkbox" name="sub2" id="s2" value="CSS">
+        <label for="s2">CSS</label>
+        <br>
+       
+        <input type="checkbox" name="sub3" id="s3" value="Javascript">
+        <label for="s3">JAVASCRIPT</label>
+        <br><br>
+
+        <label for="">Select your gender : </label>
+
+        <!-- Give same name for all 3 genders to select only one option (radio) and we have to give value attribute-->
+        <input type="radio" name="gender" id="mm" value="male">
+        <label for="mm">Male</label>
+
+        <input type="radio" name="gender" id="ff" value="female">
+        <label for="ff">Female</label>
+
+        <input type="radio" name="gender" id="oo" value="Others">
+        <label for="oo">Others</label>
+        <br><br>
+
+        <label for="dob">Date of birth : </label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+
+        <label for="add">Address : </label> <br>
+        <textarea name="address" id="add" rows="6" cols="33" placeholder="Enter your address"></textarea>
+        <br><br>
+
+        <label for="course">Select the course  : </label>
+        <select name="course" id="course">
+            <option value="">Select from here</option> <!--here no value-->
+            <option value="java">Java fullstack</option>
+            <option value="python">Python fullstack</option>
+            <option value="mern">Mern stack</option>
+        </select>
+        <br><br>
+
+        <label for="sal">Expected Salary : </label>
+        <input type="range" name="salary" id="sal" min="10000" max="100000">
+        <br><br>
+
+        <button type="submit">Register</button> 
+        <button type="reset">Reset</button>
+        <input type="submit" value="submit by input">
+        <input type="reset" value="reset by input">
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

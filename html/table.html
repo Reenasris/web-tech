@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Table tag ヾ(＠⌒ー⌒＠)ノ</h1>
+    <!--Table: combination of rows and columns
+    <tr></tr> for rows
+    <td></td> for data
+    <th></th> for heding
+        Attributes:
+           *Border
+           *width
+           *height
+           *cellspacing -gives space outside the cell, between the cell
+           *cellpadding - inside the cell it will give space , between the content and border
+           *colspan - combine columns
+           *rowspan - combine rows
+
+    -->
+
+
+<table border="1" width="600" height="200" cellspacing="2" cellpadding="30">
+    <caption>Employee Table</caption>
+    <tr>
+        <th>Eid</th>
+        <th>Ename</th>
+        <th>salary</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Miller</td>
+        <td>7500</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Adams</td>
+        <td>9000</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Scot</td>
+        <td>8000</td>
+    </tr>
+</table>
+
+<br><br>
+<h1>Fruit Information🍎🥭🍊</h1>
+
+<table border="1" width="700"  >
+    <tr>
+        <th>Fruit Image</th>
+        <th>Fruit Nmae</th>
+        <th>Dishes you can make</th>
+    </tr>
+    <tr>
+        <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ868djAR5mIlAFnnjF---4paarCg48aQTr-g&s" alt="Apple image" width="300" height="300">
+        </td>
+        <td>Apple</td>
+        <td>
+            <ul>
+                <li>Apple pie</li>
+                <li>Apple crisp</li>
+                <li>Apple salad</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3vTbJxEuCfIymBF-87Jj0gXWSSWQvdZhErg&s" alt="Mango image" width="300"></td>
+        <td>Mango</td>
+        <td>
+            <ul>
+                <li>Mango Smoothie</li>
+                <li>Mango pickle</li>
+                <li>Mango pancakes</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrnqmz2Sk9fOUssBuaP02dtvIKaPbGSwOAA&s" alt="Orange image" width="300">
+            <td>Orange</td>
+            <td>
+                <ul>
+                    <li>Orange juice</li>
+                    <li>Orange jam</li>
+                    <li>Orange cake</li>
+                </ul>
+            </td>
+        </td>
+    </tr>
+</table>
+<br><br>
+<h1>Table with colspan and rowspan</h1>
+
+<table border="1" width="600" height="300">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td colspan="2">4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>7</td>
+        <td rowspan="3">8</td>
+    </tr>
+    <tr>
+        <td rowspan="2">9</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>11</td>
+    </tr>
+</table>
+
+<br><br><br>
+<h1>Chocolate chip cookies🍪</h1> 
+<p><b>Prepare Time:</b> <i>15 minutes</i></p>
+<p><b>Cook Time:</b> <i>10 minutes</i></p>  
+
+<table border="1" height="300" width="900">
+    <tr>
+        <td rowspan="2"><img src="https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chocolate chip cookie image" height="500" width="600"></td>
+        <td>
+            <h3>Steps</h3>
+            <ol>
+                <li>Preheat the oven to 150<sup>°</sup>F </li>
+                <li>Mix flour and sugar in a bowl</li>
+                <li>Add chocolate chip and stir well</li>
+                <li>Bake for 10 minutes or until golden brown</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3>Ingredients</h3>
+            <table border="1" height="100" width="300" >
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Flour</td>
+                    <td>2 cups</td>
+                </tr>
+                <tr>
+                    <td>Sugar</td>
+                    <td>1 cup</td>
+                </tr>
+                <tr>
+                    <td>Chocolate chip</td>
+                    <td>1 cup</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<br><br>
+<table border="1" height="300" width="800" cellpadding="15 ">
+    <caption><h1><b>Time table⏳</b></h1></caption>
+
+    <tr>
+        <th><h3>Day/Period</h3></th>
+        <th><h3>I <br>9:30 - 10:20</h3></th>
+        <th><h3>II <br>9:30 - 10:20</h3></th>
+        <th><h3>III <br>9:30 - 10:20</h3></th>
+        <th><h3>12:00 - 12:40</h3></th>
+        <th><h3>IV <br>9:30 - 10:20</h3></th>
+        <th><h3>V <br>9:30 - 10:20</h3></th>
+        <th><h3>VI <br>9:30 - 10:20</h3></th>
+        <th><h3>VII <br>9:30 - 10:20</h3></th>
+    </tr>
+    <tr>
+        <td>Monday</td>
+        <td>Eng</td>
+        <td>Mat</td>
+        <td>Che</td>
+        <td rowspan="5">Lunch</td>
+        <td colspan="3">Lab</td>
+        <td>Phy</td>
+    </tr>
+    <tr>
+        <td>Tuesday</td>
+        <td colspan="3">Lab</td>
+        <td>Eng</td>
+        <td>Che</td>
+        <td>Mat</td>
+        <td>Sports</td>
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        <td>Mat</td>
+        <td>Phy</td>
+        <td>Eng</td>
+        <td>Che</td>
+        <td colspan="3">Library</td>
+    </tr>
+    <tr>
+        <td>Thursday</td>
+        <td>Phy</td>
+        <td>Eng</td>
+        <td>Che</td>
+        <td colspan="3">Lab</td>
+        <td>Mat</td>
+    </tr>
+    <tr>
+        <td>Friday</td>
+        <td>Phy</td>
+        <td>Eng</td>
+        <td>Che</td>
+        <td colspan="3">Lab</td>
+        <td>Mat</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
